@@ -1,0 +1,27 @@
+POST http://localhost:3000/posts
+Content-Type: application/json
+
+{
+    "title": "my first post",
+    "description": "This is my discription"
+}
+
+###
+GET http://localhost:3000/posts
+Content-Type: application/json
+
+###
+GET http://localhost:3000/posts/5e93ade8575bedb46fdb3dc7
+Content-Type: application/json
+
+###
+DELETE http://localhost:3000/posts/5e8ffcdf7009187e55f2c9d9/
+
+
+###
+PATCH http://localhost:3000/posts/5e8ffcdf7009187e55f2c9d9/
+Content-Type:  application/json
+
+{
+    "title": "drop zone"
+}
